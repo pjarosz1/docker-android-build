@@ -10,7 +10,7 @@ echo $GRADLE_TEST_TASK
 
 RETRIES=0
 
-until ./gradlew $GRADLE_BUILD_TASK --continue -i 
+until ./gradlew $GRADLE_BUILD_TASK --continue -i
 do
     if [ $RETRIES -gt 4 ]; then
         break
